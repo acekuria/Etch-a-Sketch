@@ -12,11 +12,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  height: 100vh;
+  gap: 5%
 }
 
 .h1 {
-  font-size: 3rem;
-  margin-top: 1em
+  font-size: 3.5rem;
+ 
 
 }
 
@@ -26,8 +29,18 @@ body {
   width: 30vw;
   min-height: 400px;  
   min-width: 500px;
+  display:flex;
 }
 
 .button {
   font-size: 2rem;
+  padding: .5em;
+}
+
+.column{
+  flex: 1;
+}
+
+.row {
+
 }

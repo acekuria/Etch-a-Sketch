@@ -13,12 +13,21 @@
 
   <div class="header">
   <h1 class="h1">Etch-a-Sketch</h1>
-  </div>
+  <input type="text" 
+    placeholder="Size of Board" 
+    onchange="changeSize(this.value)"
+    id="input" />
+<button for="input" class="button">Set Size</button></div>
+  
+  
 
-  <div class="container">
+  <div class="board"> 
   </div>
 
   <div class="button-container">
+  <button class="button">Black</button>
+  <button class="button">White</button>
+  <button class="button">Random</button>
   <button class="button">Click Me</button>
   </div>
 </body>

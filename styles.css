@@ -23,24 +23,42 @@ body {
 
 }
 
-.container {
-  border: 1px solid black;
-  max-width:700px;
-  width: 30vw;
-  min-height: 400px;  
-  min-width: 500px;
-  display:flex;
+.board {
+  border: 2px solid black;
+  height: 500px;
+  width: 500px;
+  display:grid;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
   font-size: 2rem;
-  padding: .5em;
+  width: 150px;
+}
+input {
+  display: block;
+  height: 30px;
+  width: 200px;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .column{
   flex: 1;
+  border: 1px solid black
 }
 
 .row {
+  border: 1px solid black;
+}
 
+.button-container {
+  display: flex;
+  gap: 7%
 }

@@ -33,11 +33,21 @@ function changeSize(input) {
 }
 
 function colorSquare () {
-  this.style.backgroundColor = color
+  if (color==='random'){
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    const newColor = "#" + randomColor;
+    this.style.backgroundColor = newColor;
+  } else {
+    this.style.backgroundColor = color
+  }
 }
 
 function changeColor (choice) {
   color = choice;
 
+}
+
+function Reset () {
+  populateBoard(20)
 }
 

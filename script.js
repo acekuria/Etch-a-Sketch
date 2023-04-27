@@ -6,14 +6,20 @@ const button = document.querySelector('.button');
 
 
 function populateBoard(size) {
+  let squares = board.querySelectorAll('div');
+  squares.forEach(div => div.remove());
+  
   board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
   board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+
+
   for (let i = 0; i < size**2; i++) {
     let square = document.createElement('div');
     square.style.backgroundColor = 'blue';
+    square.classList.add('square')
     board.insertAdjacentElement('beforeend',square)
+    square.addEventListener('mouseover', colorSquare)
   }
-
 }
 
 populateBoard(20);
@@ -26,5 +32,12 @@ function changeSize(input) {
   }
 }
 
+function colorSquare () {
+  this.style.backgroundColor = color
+}
 
+function changeColor (choice) {
+  color = choice;
+
+}
 

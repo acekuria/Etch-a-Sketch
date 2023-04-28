@@ -3,6 +3,7 @@ const h1 = document.createElement('h1');
 const header = document.querySelector('.header');
 const board = document.querySelector('.board');
 const button = document.querySelector('.button');
+const userInput = document.querySelector('input');
 
 
 function populateBoard(size) {
@@ -28,7 +29,7 @@ function changeSize(input) {
   if (input <= 100 && input >= 2) {
     populateBoard(input);
   } else {
-    console.log('ERROR')
+    alert('Size must be between 2 and 100')
   }
 }
 
@@ -48,6 +49,9 @@ function changeColor (choice) {
 }
 
 function Reset () {
-  populateBoard(20)
+  input = 20 
+  changeSize(input);
+
+  userInput.value = 20
 }
 

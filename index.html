@@ -13,7 +13,8 @@
 
   <div class="header">
   <h1 class="h1">Etch-a-Sketch</h1>
-  <input type="text"  
+  <input type="text" 
+    value=20
     placeholder="Size of Board" 
     onchange="changeSize(this.value)"
     id="input" />
@@ -25,9 +26,9 @@
   </div>
 
   <div class="button-container">
-  <button onclick="changeColor('black')" class="button">Black</button>
-  <button onclick="changeColor('white')" class="button">Eraser</button>
-  <button onclick="changeColor('random')" class="button">Random</button>
+  <button onclick="changeColor('black')" class="button black">Black</button>
+  <button onclick="changeColor('white')" class="button white">Eraser</button>
+  <button onclick="changeColor('random')" class="button random">Random</button>
   <button onclick="Reset()" class="button">Reset</button>
   </div>
 </body>
